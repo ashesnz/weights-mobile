@@ -1,0 +1,23 @@
+<ion-view title="'Herd'">
+
+    <div class="bar bar-subheader item-input-inset">
+        <ion-label class="item-input-wrapper">
+            <i class="icon ion-ios7-search placeholder-icon"></i>
+            <ion-input id="searchKey" type="search" placeholder="Search" ng-model="searchKey" autocorrect="off" >
+            <ion-button class="button button-clear" ng-click="clearSearch()">X</ion-button>
+        </ion-label>
+        <ion-button class="button button-clear" ng-click="search()">Search</ion-button>
+    </div>
+
+    <ion-content has-header="true" has-subheader="true">
+        <ion-list>
+            <ion-item ng-repeat="animal in herd" type="item-text-wrap" href="#/animal/{{animal.id}}">
+                <h3>{{animal.birthid}}</h3>
+                <p>{{animal.livewtbw}}</p>
+
+
+            </ion-item>
+        </ion-list>
+    </ion-content>
+
+</ion-view>

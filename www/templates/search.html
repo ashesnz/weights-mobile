@@ -1,0 +1,29 @@
+<ion-view title="'Search'">
+
+
+    <ion-content has-header="true" has-subheader="false">
+        <div class="list">
+            <ion-label class="item item-input item-stacked-label">
+                <ion-span class="input-label">Year</ion-span>
+                <input type="number" placeholder="Year" ng-model="animal.year" >
+            </ion-label>
+            <ion-label class="item item-input item-stacked-label">
+                <ion-span class="input-label">Month</ion-span>
+                <input type="number" placeholder="Month" ng-model="animal.month">
+            </ion-label>
+            <ion-label class="item item-input item-stacked-label">
+                <ion-span class="input-label">Cow Number</ion-span>
+                <input type="number" placeholder="Cow Number" ng-model="animal.cownumber">
+            </ion-label>
+            <ion-label class="item item-input item-stacked-label">
+                <ion-span class="input-label">PTPT Code</ion-span>
+                <input type="text" placeholder="PTPT Code" ng-model="animal.ptptcode">
+            </ion-label>
+
+            <div class="padding">
+                <ion-button class="button button-block button-positive" ng-click="searchAnimal(animal)">Go</ion-button>
+            </div>
+        </div>
+    </ion-content>
+
+</ion-view>

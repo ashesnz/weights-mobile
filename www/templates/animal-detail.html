@@ -1,0 +1,38 @@
+<ion-view title="animal.birthid">
+
+  <ion-content has-header="true" padding="true">
+
+      <div class="list card">
+<!--
+          <a class="item item-icon-left" href="#/employee/{{employee.managerId}}" ng-if="employee.managerId > 0"><i class="icon ion-ios7-person"></i>View Manager<p>{{employee.managerName}}</p></a>
+          <a class="item item-icon-left" href="#/employee/{{employee.id}}/reports" ng-if="employee.reports > 0"><i class="icon ion-person-stalker"></i>View Direct Reports<p>{{employee.reports}}</p></a>
+-->
+          <a class="item item-icon-left" href="tel:{{animal.birthid}}">Birth Date<p>{{animal.birthdate}}</p><i class="icon ion-ios7-heart"></i></a>
+<!--
+          <a class="item item-icon-left" href="tel:{{employee.cellPhone}}"><i class="icon ion-ios7-telephone"></i>Call Cell<p>{{employee.cellPhone}}</p></a>
+          <a class="item item-icon-left" href="sms:{{employee.cellPhone}}"><i class="icon ion-chatbox-working"></i>SMS<p>{{employee.cellPhone}}</p></a>
+          <a class="item item-icon-left" href="mailto:{{employee.email}}"><i class="icon ion-ios7-email"></i>Email<p>{{employee.email}}</p></a>
+-->
+      </div>
+
+
+
+      <!-- Modal content area -->
+      <ion-content has-header="true">
+
+          <form ng-submit="createWeight(weight)">
+              <div class="list">
+                  <ion-label class="item item-input">
+                      <ion-span class="input-label">Weight</ion-span>
+                      <ion-input type="tel" ng-model="weight.value"></ion-input>
+                  </ion-label>
+              </div>
+              <div class="padding">
+                  <button type="submit" class="button button-block button-positive">Input Weight</button>
+              </div>
+          </form>
+
+      </ion-content>
+
+  </ion-content>
+</ion-view>
