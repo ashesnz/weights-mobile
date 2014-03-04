@@ -20,7 +20,7 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
     .state('tab', {
       url: "/tab",
       abstract: true,
-      templateUrl: "templates/tabs.html"
+      templateUrl: "tabs.html"
     })
 
     // the pet tab has its own child nav-view and history
@@ -28,7 +28,7 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
       url: '/main',
       views: {
         'main-tab': {
-          templateUrl: 'templates/main-index.html',
+          templateUrl: 'main-index.html',
           controller: 'MainIndexCtrl'
         }
       }
@@ -38,7 +38,7 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
       url: '/pet/:petId',
       views: {
         'pets-tab': {
-          templateUrl: 'templates/pet-detail.html',
+          templateUrl: 'pet-detail.html',
           controller: 'PetDetailCtrl'
         }
       }
@@ -48,7 +48,7 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
       url: '/adopt',
       views: {
         'adopt-tab': {
-          templateUrl: 'templates/adopt.html'
+          templateUrl: 'adopt.html'
         }
       }
     })
@@ -57,38 +57,38 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
       url: '/about',
       views: {
         'about-tab': {
-          templateUrl: 'templates/about.html'
+          templateUrl: 'about.html'
         }
       }
     })
 
     .state('search-index', {
       url: '/search',
-      templateUrl: 'templates/search.html',
+      templateUrl: 'search.html',
       controller: 'SearchController'
     })
 
     .state('herds-index', {
       url: '/herds',
-      templateUrl: 'templates/herds-index.html',
+      templateUrl: 'herds-index.html',
       controller: 'HerdsIndexController'
     })
 
     .state('animal-list-index2', {
       url: '/herd',
-      templateUrl: 'templates/animal-list-index.html',
+      templateUrl: 'animal-list-index.html',
       controller: 'HerdIndexController'
     })
 
     .state('animal-list-index', {
       url: '/herd/:ptptcode',
-      templateUrl: 'templates/animal-list-index.html',
+      templateUrl: 'animal-list-index.html',
       controller: 'HerdIndexController'
     })
 
     .state('animal-detail', {
       url: '/animal/:id',
-      templateUrl: 'templates/animal-detail.html',
+      templateUrl: 'animal-detail.html',
       controller: 'AnimalDetailController'
     });
 
